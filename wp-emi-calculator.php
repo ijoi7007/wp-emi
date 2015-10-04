@@ -71,8 +71,6 @@ function calculator_price( $atts){
 							  </div>
 					</div>
 
-</div>
-
 					</section>
 
 <?php
