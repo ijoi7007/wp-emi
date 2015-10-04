@@ -11,72 +11,6 @@
 */
 ?>
 
-<?php
-// new shortcode for every function
-// new shortcode for every function
-add_shortcode('calculator-price', 'calculator_price' );
-function calculator_price( $atts){
-?>
-
-<section>
-
-			  <div class="calculator-div">
-			  	<h2>Price Calculator</h2>
-						<div id="pricecal">
-							<!--<h1>Price Calculator </h1>-->
-						<form name="pricecal1">
-						<div style="border:1px dotted #fff; margin-top:5px; padding:5px;">
-						<label>Area (Sq Yard):</label><input type="text" name="area1" id="area1" class="cal1" onkeyup="pricecal()"; value="1"> <br>
-						</div>
-
-						<div style="border:1px dotted #fff; margin-top:5px; padding:5px;">
-						<label>Rate:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-						<select name="rate1" id="rate1" class="cal1" onchange="pricecal()";>
-						<option value="500">500 Rs.</option>
-						<option value="1000">1000 Rs.</option>
-						<option value="1500">1500 Rs.</option>
-						<option value="2000">2000 Rs.</option>
-						<option value="2500">2500 Rs.</option>
-						<option value="3000">3000 Rs.</option>
-						<option value="3500">3500 Rs.</option>
-						<option value="4000">4000 Rs.</option>
-						<option value="4500">4500 Rs.</option>
-						<option value="5000">5000 Rs.</option>
-						<option value="5500">5500 Rs.</option>
-						<option value="6000">6000 Rs.</option>
-						<option value="6500">6500 Rs.</option>
-						<option value="7000">7000 Rs.</option>
-						<option value="7500">7500 Rs.</option>
-						<option value="8000">8000 Rs.</option>
-						<option value="8500">8500 Rs.</option>
-						<option value="9000">9000 Rs.</option>
-						<option value="9500">9500 Rs.</option>
-						<option value="10000">10000 Rs.</option>
-						<option value="10500">10500 Rs.</option>
-						<option value="11000">11000 Rs.</option>
-						<option value="11500">11500 Rs.</option>
-						<option value="12000">12000 Rs.</option>
-						<option value="12500">12500 Rs.</option>
-						<option value="13000">13000 Rs.</option>
-						<option value="13500">13500 Rs.</option>
-						<option value="14000">14000 Rs.</option>
-						<option value="14500">14500 Rs.</option>
-						<option value="150000">150000 Rs.</option>
-						</select>
-						</div>
-					</form>
-
-					<div id="priceresult" style="border:1px dotted #fff; margin-top:15px; padding:10px;font-weight:bold;">Total Amount:</div>
-
-							  </div>
-					</div>
-
-					</section>
-
-<?php
-// end of new shortcode.
-}
-?>
 
 <?php
 
@@ -283,8 +217,10 @@ function emi_calculator( $atts ) {
 
 	</section>
 
-<?php }
-function emi_calculator_script() {?>
+<?php
+}
+function emi_calculator_script() {
+?>
 
 <script>
 (function($){
